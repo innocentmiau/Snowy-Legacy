@@ -830,6 +830,11 @@
   (input-opts-binds-unknown #x1615)
   (progress-no-other-resolution-options #x1616)
   (input-opts-controller-led-reflect-heat #x1617)
+  (freezy-level-name #x1700)
+  (freezy-findcell1 #x1701)
+  (freezy-findcell2 #x1702)
+  (freezy-findcell3 #x1703)
+  (freezy-buzzer #x1704)
 
   ;; mod text
   (pad-triangle #x2000)

@@ -2,7 +2,7 @@
   "game_version": 1,
   "text_version": 11, // patched to 11
   "game_name": "jak1",
-  "expected_elf_name": "SCUS_971.24",
+  "expected_elf_name": "SCES_503.61",
 
   // if you want to filter to only some object names.
   // it will make the decompiler much faster.
@@ -77,7 +77,7 @@
   "print_cfgs": false,
 
   // set to true for PAL versions. this will forcefully skip files that have some data missing at the end.
-  "is_pal": false,
+  "is_pal": true,
 
   ////////////////////////////
   // CONFIG FILES

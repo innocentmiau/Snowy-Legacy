@@ -199,11 +199,16 @@
                   (- arg2)
                   )
               )
+              (level-text-id (if (= arg0 5) 
+                  #x1704 
+                  (+ arg0 286)
+                  )
+              )
         )
     (+! (-> arg1 origin x) (the float s5-0))
     (let ((f30-0 (- 1.0 (* 0.0033333334 (the float arg2)))))
       (print-game-text-scaled
-        (lookup-text! *common-text* (the-as text-id (+ arg0 286)) #f)
+        (lookup-text! *common-text* (the-as text-id level-text-id) #f)
         f30-0
         arg1
         (the int (* 128.0 f30-0))
@@ -419,27 +424,16 @@
                                  ((or (= v1-11 'citadel) (= v1-11 'lavatube))
                                   4
                                   )
+                                 ((= v1-11 'freezy)
+                                  5
+                                  )
                                  (else
                                    -1
                                    )
                                  )
           )
-    )
-  (set! (-> self max-slot) (cond
-                             ((task-closed? (game-task village4-button) (task-status need-hint))
-                              4
-                              )
-                             ((task-closed? (game-task village3-button) (task-status need-hint))
-                              3
-                              )
-                             ((task-closed? (game-task village2-levitator) (task-status need-hint))
-                              2
-                              )
-                             (else
-                               1
-                               )
-                             )
-        )
+    (format 0 "SELF LEVEL-SLOT: ~D~%" (-> self level-slot))
+          )
   (go-virtual idle)
   (none)
   )

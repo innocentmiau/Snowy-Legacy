@@ -514,7 +514,7 @@
       (('swamp)
        (update-rain self)
        )
-      (('snow)
+      (('snow 'freezy)
        (update-snow self)
        )
       )

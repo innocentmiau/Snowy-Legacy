@@ -363,6 +363,10 @@
           )
     (launch-particles (-> *part-id-table* 34) gp-0)
     (launch-particles (-> *part-id-table* 33) gp-0)
+    (launch-particles (-> *part-id-table* 34) gp-0)
+    (launch-particles (-> *part-id-table* 33) gp-0)
+    (launch-particles (-> *part-id-table* 34) gp-0)
+    (launch-particles (-> *part-id-table* 33) gp-0)
     )
   0
   (none)
